@@ -1,0 +1,12 @@
+name: workflow_dispatch (Waiting For Review Labeler)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kentaro-m/review-time-alert@main
+        with:
+          hours-before-label-add: 1
