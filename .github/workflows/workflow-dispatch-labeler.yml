@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: kentaro-m/review-time-alert@main
         with:
-          hours-before-label-add: 1
+          hours-before-add-label: 1

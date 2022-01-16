@@ -3,7 +3,7 @@ name: schedule (Waiting For Review Labeler)
 on:
   schedule:
     # Crontab Every Hour
-    - cron: '0 * * * *'
+    - cron: "0 * * * *"
 
 jobs:
   action:
@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: kentaro-m/waiting-for-review-labeler@main
         with:
-          hours-before-label-add: 1
+          hours-before-add-label: 1
